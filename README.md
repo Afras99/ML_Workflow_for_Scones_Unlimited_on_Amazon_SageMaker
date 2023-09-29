@@ -4,7 +4,7 @@ Welcome to the ML Workflow for Scones Unlimited project! As a Machine Learning E
 
 ## Getting Started
 
-* Proceed with the project within the [jupyter notebook](SconesUnlimited.ipynb).
+* Proceed with the project within the [jupyter notebook](starter.ipynb).
 
 ### Dependencies
 
@@ -50,7 +50,6 @@ In this project, I've designed and implemented a scalable image classification m
 ### Step 4: Testing and Evaluation 🧪
 
 - Rigorously tested and evaluated the performance of your ML workflow.
-- Ensured the classification model achieves a test accuracy above **94%**.
 
 ### Step 5: Cleanup Cloud Resources ♻️
 
@@ -70,15 +69,16 @@ Throughout this project, I've applied the following skills:
 ----
 1. The **Serialize Image Data Lambda Function** takes the address of an image hosted in S3, then serializes and returns a JSON
 object.
-2. The **Infer Serialized Image Data** takes the JSON object returned from 1 and passes it to an end point and collectd the result
+2. The **Image Classification function** takes the JSON object returned from 1 and passes it to an end point and collectd the result
 as a JSON Object.
 3. The **Filter Results Lambda Function** takes the inference data from 2 and filters only the images that meet the defined threshold.  
 
-## Step Functions Output Graph
-![](https://github.com/Arnit9/ML-Workflow-for-Scones-Unlimited-on-Amazon-SageMaker/blob/master/images/stepfunction-graph.png)
-
+* Execution Flow of the Step Function
+![stepfunction](img/stepfunctions_graph.png)
+* Step Function Graph (that met inference threshold)
+![stepfunction_imageclassification.png](img/stepfunction-output(met_inference_threshold).png)
 ## Step Function Table View Output
-![](https://github.com/Arnit9/ML-Workflow-for-Scones-Unlimited-on-Amazon-SageMaker/blob/master/images/stepfunction-tableview.png)
+![](img/step-function-execution-logs.png)
 
 ---
 Feel free to connect for any inquiries or insights. Happy building and scone-classifying! 🥐🤖
