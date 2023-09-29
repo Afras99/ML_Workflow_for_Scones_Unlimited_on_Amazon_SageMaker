@@ -73,9 +73,11 @@ object.
 as a JSON Object.
 3. The **Filter Results Lambda Function** takes the inference data from 2 and filters only the images that meet the defined threshold.  
 
-* Execution Flow of the Step Function
+## Execution Flow of the Step Function
 ![stepfunction](img/stepfunctions_graph.png)
-* Step Function Graph (that met inference threshold)
+## Working Step Function
+![](img/working-step-function.png)
+## Step Function (that met inference threshold)
 ![stepfunction_imageclassification.png](img/stepfunction-output(met_inference_threshold).png)
 ## Step Function Table View Output
 ![](img/step-function-execution-logs.png)
